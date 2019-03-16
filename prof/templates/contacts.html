@@ -1,41 +1,117 @@
-<div class="projects">
-    <div>
-        <h2 style="color:rgb(129, 0, 0); font-family: 'Righteous', cursive;">PROJECTS</h2>
-    </div>
+{%extends 'base.html'%} 
+{% block content %} 
+{{block.super}}
+
+<img onclick="openNav()" id="hide" class="menu" src="../../static/img/menu.png" alt="">
+
+<div class="container">
+    <h1 class="">Get in touch <strong>___</strong></h1>
+    <div class="card" style="width: 38rem; height: 500px;"></div>
+    <img class="email zoom" src="/static/img/email.png">
+    <img class="linkedin zoom" src="/static/img/linkedin.png">
+    <img class="twitter zoom" src="/static/img/twitter.png">
+    <img class="facebook zoom" href="https://www.linkedin.com/in/fred-kheisa" src="/static/img/facebook.png">
+ 
+    <h2 class="emailt zoom">@fredkheisa@gmail.com</h2> 
+    <h2 class="linkedint zoom">@Fred Kheisa</h2> 
+    <h2 class="twittert zoom">@Fred Kheisa</h2>
+    <h2 class="facebookt zoom">@Fred Kheisa</h2> 
+ 
+
+
+    
 </div>
 
-<div class="card1" style="width:500px" >
-    <img class="card-img-top" src="../../static/img/3.jpg" alt="Card image">
-    <div class="card-img-overlay">
-        <h4 class="card-title">John Doe</h4>
-        <p class="card-text">Some example text.</p>
-        <a href="#" class="btn btn-primary">See Profile</a>
-    </div>
-</div>
+<style>
+    .zoom:hover {
+        transform: scale(1.5);
+    }
+    .facebookt{
+        position: absolute;
+        top: 545px;
+        height: 60px;
+        left: 450px;
+    }
+    .facebook{
+        position: absolute;
+        top: 530px;
+        height: 60px;
+        left: 360px;
+    }
+    .twittert{
+        position: absolute;
+        top: 440px;
+        height: 60px;
+        left: 450px;
+    }
+    .twitter{
+        position: absolute;
+        top: 430px;
+        height: 60px;
+        left: 360px;
+    }
+    .linkedint{
+        position: absolute;
+        top: 345px;
+        height: 80px;
+        left: 450px;
 
-<div class="card2" style="width:500px; height:0px;">
-    <img class="card-img-top" src="../../static/img/3.jpg" alt="Card image">
-    <div class="card-img-overlay">
-        <h4 class="card-title">John Doe</h4>
-        <p class="card-text">Some example text.</p>
-        <a href="#" class="btn btn-primary">See Profile</a>
-    </div>
-</div>
+    }
+    .linkedin{
+        position: absolute;
+        top: 330px;
+        height: 60px;
+        left: 360px;
+    }
+    .emailt{
+        position: absolute;
+        top: 255px;
+        height: 80px;
+        left: 450px;
 
-<div class="card3" style="width:500px">
-    <img class="card-img-top" src="../../static/img/3.jpg" alt="Card image">
-    <div class="card-img-overlay">
-        <h4 class="card-title">John Doe</h4>
-        <p class="card-text">Some example text.</p>
-        <a href="#" class="btn btn-primary">See Profile</a>
-    </div>
-</div>
+    }
+    .email{
+        position: absolute;
+        top: 230px;
+        height: 80px;
+        left: 350px;
+    }
+    .card{
+        background-image: url("../../static/img/");
+        position: absolute;
+        top : 200px;
+        left: 300PX;
+        opacity: 0.5;
+    }
+    .menu {
+        position: fixed;
+        left: 50px;
+        top: 75px;
+        height: 80px;
+        width: 80px;
 
-<div class="card4" style="width:500px">
-    <img class="card-img-top" src="../../static/img/3.jpg" alt="Card image">
-    <div class="card-img-overlay">
-        <h4 class="card-title">John Doe</h4>
-        <p class="card-text">Some example text.</p>
-        <a href="#" class="btn btn-primary">See Profile</a>
-    </div>
-</div>
+    }
+    
+    strong {
+        color: yellow;
+    }
+
+    h1 {
+        color: white;
+        position: absolute;
+        font-size: 70px;
+        left: 250px;
+        
+    }
+
+    body {
+        background-image: url("../../static/img/music.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    @import url('https://fonts.googleapis.com/css?family=Baloo+Tamma|Luckiest+Guy|Righteous');
+</style>
+{% endblock %}

@@ -2,10 +2,35 @@
 {% block content %} 
 {{block.super}}
 
+<img onclick="openNav()" id="hide" class="menu" src="../../static/img/menu.png" alt="">
+
+
 <div class="container">
-    <h1 class=""> WORKS <strong>___</strong></h1>
-    <div class="proj1">
-        <div class="" style="">
+    <h1 class="">Applications <strong>___</strong></h1>
+    <div class="proj1  ">
+        <div class="" >
+            <img  style="height:400px" class="card-img-top w3-animate-top" src="/static/img/newsapp.jpg" alt="Card image">
+            <div class="card-img-overlay" style="color:white;">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text.</p>
+                <a href="https://neewsview.herokuapp.com" class="btn btn-primary" >Open App</a>
+            </div>
+        </div>
+    </div>
+    <div class="proj2">
+        <div class="" style="width:500px">
+            <img style="height:700px" class="card-img-top" src="/static/img/12.jpg" alt="Card image">
+            <div class="card-img-overlay" style="color:white;">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="proj3">
+        <div class="" style="width:495px">
             <img style="height:400px" class="card-img-top" src="/static/img/12.jpg" alt="Card image">
             <div class="card-img-overlay" style="color:white;">
                 <h4 class="card-title">John Doe</h4>
@@ -14,26 +39,42 @@
             </div>
         </div>
     </div>
-    <div class="proj2">
-            <div class="" style="width:500px">
-                <img style="height:700px" class="card-img-top" src="/static/img/12.jpg" alt="Card image">
-                <div class="card-img-overlay" style="color:white;">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Some example text.</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
-                </div>
-            </div>
-        </div>
-</div>
 
 
+<script>
+$(".proj1").hover3d({
+	selector: ".movie__card",
+	shine: true,
+	sensitivity: 20,
+});
+</script>
 <style>
-    .proj2{
+    .menu {
+        position: fixed;
+        left: 50px;
+        top: 75px;
+        height: 80px;
+        width: 80px;
+
+    }
+    .proj3{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
         position: absolute;
-        top:700px;
+        left:765px;
+        top:675px;
+
+    }
+    .proj2{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        position: absolute;
+        top:675px;
 
     }
     .proj1{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
         position: absolute;
         top:250px;
 
@@ -56,7 +97,6 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-
 
 
     @import url('https://fonts.googleapis.com/css?family=Baloo+Tamma|Luckiest+Guy|Righteous');
